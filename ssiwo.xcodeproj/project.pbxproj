@@ -21,9 +21,12 @@
 		2DD9F4E51FB442C1003A0ACE /* UIView+YDHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4E11FB442C0003A0ACE /* UIView+YDHandle.m */; };
 		2DD9F4E61FB442C1003A0ACE /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4E21FB442C0003A0ACE /* NSString+Valid.m */; };
 		2DD9F4E71FB442C1003A0ACE /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4E31FB442C1003A0ACE /* Foundation+Log.m */; };
+		4C6FAE2200B04E31A8AA55CD /* libPods-ssiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA714ECD3483615B57C76E4 /* libPods-ssiwo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C887AB2D141C7432FD6998 /* Pods-ssiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo.release.xcconfig"; sourceTree = "<group>"; };
+		1658EC6129DFC18FCDB77C0F /* Pods-ssiwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssiwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo.debug.xcconfig"; sourceTree = "<group>"; };
 		2DD9F4AD1FB43FF8003A0ACE /* ssiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ssiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD9F4B01FB43FF8003A0ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DD9F4B11FB43FF8003A0ACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		2DD9F4E11FB442C0003A0ACE /* UIView+YDHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YDHandle.m"; sourceTree = "<group>"; };
 		2DD9F4E21FB442C0003A0ACE /* NSString+Valid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Valid.m"; sourceTree = "<group>"; };
 		2DD9F4E31FB442C1003A0ACE /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		8EA714ECD3483615B57C76E4 /* libPods-ssiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ssiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6FAE2200B04E31A8AA55CD /* libPods-ssiwo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +76,8 @@
 				2DD9F4C61FB440A9003A0ACE /* Code */,
 				2DD9F4AF1FB43FF8003A0ACE /* ssiwo */,
 				2DD9F4AE1FB43FF8003A0ACE /* Products */,
+				509C2F2C978401B7C38B9A17 /* Pods */,
+				FED389650C73AC1525ADC469 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +178,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		509C2F2C978401B7C38B9A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1658EC6129DFC18FCDB77C0F /* Pods-ssiwo.debug.xcconfig */,
+				02C887AB2D141C7432FD6998 /* Pods-ssiwo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FED389650C73AC1525ADC469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA714ECD3483615B57C76E4 /* libPods-ssiwo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DD9F4C31FB43FF8003A0ACE /* Build configuration list for PBXNativeTarget "ssiwo" */;
 			buildPhases = (
+				43D515CAD81A8ACA7093C3F6 /* [CP] Check Pods Manifest.lock */,
 				2DD9F4A91FB43FF8003A0ACE /* Sources */,
 				2DD9F4AA1FB43FF8003A0ACE /* Frameworks */,
 				2DD9F4AB1FB43FF8003A0ACE /* Resources */,
+				1F7CF5D5521040DA003A548E /* [CP] Embed Pods Frameworks */,
+				C5E2194CE2572FE80B2206E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +263,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F7CF5D5521040DA003A548E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D515CAD81A8ACA7093C3F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ssiwo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5E2194CE2572FE80B2206E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DD9F4A91FB43FF8003A0ACE /* Sources */ = {
@@ -384,6 +467,7 @@
 		};
 		2DD9F4C41FB43FF8003A0ACE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1658EC6129DFC18FCDB77C0F /* Pods-ssiwo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -401,6 +485,7 @@
 		};
 		2DD9F4C51FB43FF8003A0ACE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C887AB2D141C7432FD6998 /* Pods-ssiwo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
