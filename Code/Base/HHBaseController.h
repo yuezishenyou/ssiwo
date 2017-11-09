@@ -10,4 +10,11 @@
 
 @interface HHBaseController : UIViewController
 
+- (void)setNavigationController;
+
+- (void)backClick;
+
+- (void)rightClick;
+
+
 @end

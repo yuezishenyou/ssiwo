@@ -21,6 +21,9 @@
 		2DD9F4E51FB442C1003A0ACE /* UIView+YDHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4E11FB442C0003A0ACE /* UIView+YDHandle.m */; };
 		2DD9F4E61FB442C1003A0ACE /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4E21FB442C0003A0ACE /* NSString+Valid.m */; };
 		2DD9F4E71FB442C1003A0ACE /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4E31FB442C1003A0ACE /* Foundation+Log.m */; };
+		2DD9F5131FB4473E003A0ACE /* HHMyInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F5121FB4473E003A0ACE /* HHMyInfoController.m */; };
+		2DD9F5161FB44750003A0ACE /* HHAnimateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F5151FB44750003A0ACE /* HHAnimateController.m */; };
+		2DD9F5191FB447A5003A0ACE /* HHPersonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F5181FB447A5003A0ACE /* HHPersonController.m */; };
 		4C6FAE2200B04E31A8AA55CD /* libPods-ssiwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA714ECD3483615B57C76E4 /* libPods-ssiwo.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,12 @@
 		2DD9F4E11FB442C0003A0ACE /* UIView+YDHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YDHandle.m"; sourceTree = "<group>"; };
 		2DD9F4E21FB442C0003A0ACE /* NSString+Valid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Valid.m"; sourceTree = "<group>"; };
 		2DD9F4E31FB442C1003A0ACE /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		2DD9F5111FB4473E003A0ACE /* HHMyInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHMyInfoController.h; sourceTree = "<group>"; };
+		2DD9F5121FB4473E003A0ACE /* HHMyInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHMyInfoController.m; sourceTree = "<group>"; };
+		2DD9F5141FB44750003A0ACE /* HHAnimateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHAnimateController.h; sourceTree = "<group>"; };
+		2DD9F5151FB44750003A0ACE /* HHAnimateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHAnimateController.m; sourceTree = "<group>"; };
+		2DD9F5171FB447A5003A0ACE /* HHPersonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPersonController.h; sourceTree = "<group>"; };
+		2DD9F5181FB447A5003A0ACE /* HHPersonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHPersonController.m; sourceTree = "<group>"; };
 		8EA714ECD3483615B57C76E4 /* libPods-ssiwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ssiwo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -109,6 +118,7 @@
 		2DD9F4C61FB440A9003A0ACE /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2DD9F4E81FB44594003A0ACE /* Util */,
 				2DD9F4C71FB440A9003A0ACE /* Base */,
 				2DD9F4C81FB440A9003A0ACE /* Category */,
 				2DD9F4C91FB440A9003A0ACE /* Class */,
@@ -145,6 +155,7 @@
 		2DD9F4C91FB440A9003A0ACE /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2DD9F50C1FB44709003A0ACE /* MyInfo */,
 				2DD9F4D81FB44269003A0ACE /* Main */,
 			);
 			path = Class;
@@ -174,6 +185,34 @@
 			children = (
 				2DD9F4DA1FB4427D003A0ACE /* HHMainController.h */,
 				2DD9F4DB1FB4427D003A0ACE /* HHMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DD9F4E81FB44594003A0ACE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2DD9F50C1FB44709003A0ACE /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2DD9F5101FB4473E003A0ACE /* Controller */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		2DD9F5101FB4473E003A0ACE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DD9F5141FB44750003A0ACE /* HHAnimateController.h */,
+				2DD9F5151FB44750003A0ACE /* HHAnimateController.m */,
+				2DD9F5171FB447A5003A0ACE /* HHPersonController.h */,
+				2DD9F5181FB447A5003A0ACE /* HHPersonController.m */,
+				2DD9F5111FB4473E003A0ACE /* HHMyInfoController.h */,
+				2DD9F5121FB4473E003A0ACE /* HHMyInfoController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -330,12 +369,15 @@
 				2DD9F4DC1FB4427D003A0ACE /* HHMainController.m in Sources */,
 				2DD9F4E41FB442C1003A0ACE /* NSString+date.m in Sources */,
 				2DD9F4E61FB442C1003A0ACE /* NSString+Valid.m in Sources */,
+				2DD9F5191FB447A5003A0ACE /* HHPersonController.m in Sources */,
 				2DD9F4E71FB442C1003A0ACE /* Foundation+Log.m in Sources */,
 				2DD9F4D11FB440F4003A0ACE /* HHBaseController.m in Sources */,
 				2DD9F4C01FB43FF8003A0ACE /* main.m in Sources */,
+				2DD9F5131FB4473E003A0ACE /* HHMyInfoController.m in Sources */,
 				2DD9F4E51FB442C1003A0ACE /* UIView+YDHandle.m in Sources */,
 				2DD9F4B21FB43FF8003A0ACE /* AppDelegate.m in Sources */,
 				2DD9F4CE1FB440DB003A0ACE /* HHNavigationController.m in Sources */,
+				2DD9F5161FB44750003A0ACE /* HHAnimateController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

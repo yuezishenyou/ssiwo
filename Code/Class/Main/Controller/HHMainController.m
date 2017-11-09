@@ -7,31 +7,67 @@
 //
 
 #import "HHMainController.h"
+#import "HHAnimateController.h"
 
-@interface HHMainController ()
+@interface HHMainController ()<UIGestureRecognizerDelegate>
+
+/** tapGestureRec */
+@property (nonatomic, weak) UITapGestureRecognizer *tapGestureRec;
+/** panGestureRec */
+@property (nonatomic, strong) UIPanGestureRecognizer *panGestureRec;
+
+@property (nonatomic, assign) BOOL hasClick;
 
 @end
 
 @implementation HHMainController
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setNavigationController];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+
+- (void)backClick
+{
+    // 防止重复点击
+    if (self.hasClick) return;
+    self.hasClick = YES;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.hasClick = NO;
+    });
+    
+    // 展示个人中心
+    HHAnimateController *vc = [[HHAnimateController alloc] init];
+    vc.view.backgroundColor = [UIColor clearColor];
+    [self addChildViewController:vc];
+    [self.view addSubview:vc.view];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
+
+
+
+
+
+
+
 
 @end
