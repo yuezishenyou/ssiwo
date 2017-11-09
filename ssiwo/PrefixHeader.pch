@@ -9,6 +9,16 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+
+//此版本iOS 9.0 以后可用
+
+#import <MAMapKit/MAMapKit.h>
+#import <AMapNaviKit/AMapNaviKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+
 #import "Const.h"
 #import "Common.h"
 #import "Global.h"
