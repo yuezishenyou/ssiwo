@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>app需要同意</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>app需要同意</string>
+	<key>NSLocationUsageDescription</key>
+	<string>app需要同意</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>app需要同意</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

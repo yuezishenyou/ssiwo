@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D47C3DD1FB44B46009646A8 /* HHAMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3DC1FB44B45009646A8 /* HHAMapHelper.m */; };
 		2DD9F4B21FB43FF8003A0ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4B11FB43FF8003A0ACE /* AppDelegate.m */; };
 		2DD9F4B51FB43FF8003A0ACE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4B41FB43FF8003A0ACE /* ViewController.m */; };
 		2DD9F4B81FB43FF8003A0ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F4B61FB43FF8003A0ACE /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		02C887AB2D141C7432FD6998 /* Pods-ssiwo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssiwo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo.release.xcconfig"; sourceTree = "<group>"; };
 		1658EC6129DFC18FCDB77C0F /* Pods-ssiwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssiwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D47C3DB1FB44B45009646A8 /* HHAMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAMapHelper.h; sourceTree = "<group>"; };
+		2D47C3DC1FB44B45009646A8 /* HHAMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAMapHelper.m; sourceTree = "<group>"; };
 		2DD9F4AD1FB43FF8003A0ACE /* ssiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ssiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD9F4B01FB43FF8003A0ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DD9F4B11FB43FF8003A0ACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 		2DD9F4C71FB440A9003A0ACE /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				2D47C3DB1FB44B45009646A8 /* HHAMapHelper.h */,
+				2D47C3DC1FB44B45009646A8 /* HHAMapHelper.m */,
 				2DD9F4CC1FB440DB003A0ACE /* HHNavigationController.h */,
 				2DD9F4CD1FB440DB003A0ACE /* HHNavigationController.m */,
 				2DD9F4CF1FB440F4003A0ACE /* HHBaseController.h */,
@@ -375,6 +380,7 @@
 				2DD9F4C01FB43FF8003A0ACE /* main.m in Sources */,
 				2DD9F5131FB4473E003A0ACE /* HHMyInfoController.m in Sources */,
 				2DD9F4E51FB442C1003A0ACE /* UIView+YDHandle.m in Sources */,
+				2D47C3DD1FB44B46009646A8 /* HHAMapHelper.m in Sources */,
 				2DD9F4B21FB43FF8003A0ACE /* AppDelegate.m in Sources */,
 				2DD9F4CE1FB440DB003A0ACE /* HHNavigationController.m in Sources */,
 				2DD9F5161FB44750003A0ACE /* HHAnimateController.m in Sources */,
