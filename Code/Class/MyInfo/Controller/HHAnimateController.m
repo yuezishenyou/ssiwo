@@ -67,7 +67,7 @@ static CGFloat const animationTime = 0.4;
     
     // 添加控制器
     HHPersonController *leftVc = [[HHPersonController alloc] init];
-    leftVc.view.backgroundColor = [UIColor redColor];
+    leftVc.view.backgroundColor = [UIColor whiteColor];
     CGFloat width = [UIScreen mainScreen].bounds.size.width - 50;
     if ([UIScreen mainScreen].bounds.size.width > 375)
     {
@@ -81,6 +81,7 @@ static CGFloat const animationTime = 0.4;
     [self.view addSubview:leftVc.view];
     [self addChildViewController:leftVc];
     self.leftVc = leftVc;
+    
 }
 
 
@@ -97,7 +98,10 @@ static CGFloat const animationTime = 0.4;
         self.bgView.alpha = 0.5;
     } completion:^(BOOL finished) {
         self.view.userInteractionEnabled = YES;
+
     }];
+    
+    
 }
 
 - (void)closeAnimation {

@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2D47C3DD1FB44B46009646A8 /* HHAMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3DC1FB44B45009646A8 /* HHAMapHelper.m */; };
+		2D47C3E01FB44F17009646A8 /* HHMyTripController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3DF1FB44F17009646A8 /* HHMyTripController.m */; };
+		2D47C3F11FB45335009646A8 /* UIView+animated.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3E31FB45335009646A8 /* UIView+animated.m */; };
+		2D47C3F21FB45335009646A8 /* DejNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3E61FB45335009646A8 /* DejNetwork.m */; };
+		2D47C3F31FB45335009646A8 /* YDNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3E81FB45335009646A8 /* YDNetWork.m */; };
+		2D47C3F41FB45335009646A8 /* YDNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3EA1FB45335009646A8 /* YDNetworking.m */; };
+		2D47C3F51FB45335009646A8 /* TimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3ED1FB45335009646A8 /* TimerManager.m */; };
+		2D47C3F61FB45335009646A8 /* HHServicePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3F01FB45335009646A8 /* HHServicePickerView.m */; };
+		2D47C3FF1FB453A6009646A8 /* YDSelectPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3F91FB453A6009646A8 /* YDSelectPhoto.m */; };
+		2D47C4001FB453A6009646A8 /* DejActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3FC1FB453A6009646A8 /* DejActivityView.m */; };
+		2D47C4011FB453A6009646A8 /* DejFlickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C3FE1FB453A6009646A8 /* DejFlickerView.m */; };
+		2D47C4041FB458CB009646A8 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D47C4031FB458CB009646A8 /* MapManager.m */; };
 		2DD9F4B21FB43FF8003A0ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4B11FB43FF8003A0ACE /* AppDelegate.m */; };
 		2DD9F4B51FB43FF8003A0ACE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD9F4B41FB43FF8003A0ACE /* ViewController.m */; };
 		2DD9F4B81FB43FF8003A0ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DD9F4B61FB43FF8003A0ACE /* Main.storyboard */; };
@@ -33,6 +44,28 @@
 		1658EC6129DFC18FCDB77C0F /* Pods-ssiwo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ssiwo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ssiwo/Pods-ssiwo.debug.xcconfig"; sourceTree = "<group>"; };
 		2D47C3DB1FB44B45009646A8 /* HHAMapHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAMapHelper.h; sourceTree = "<group>"; };
 		2D47C3DC1FB44B45009646A8 /* HHAMapHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAMapHelper.m; sourceTree = "<group>"; };
+		2D47C3DE1FB44F17009646A8 /* HHMyTripController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHMyTripController.h; sourceTree = "<group>"; };
+		2D47C3DF1FB44F17009646A8 /* HHMyTripController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHMyTripController.m; sourceTree = "<group>"; };
+		2D47C3E21FB45335009646A8 /* UIView+animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+animated.h"; sourceTree = "<group>"; };
+		2D47C3E31FB45335009646A8 /* UIView+animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+animated.m"; sourceTree = "<group>"; };
+		2D47C3E51FB45335009646A8 /* DejNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejNetwork.h; sourceTree = "<group>"; };
+		2D47C3E61FB45335009646A8 /* DejNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejNetwork.m; sourceTree = "<group>"; };
+		2D47C3E71FB45335009646A8 /* YDNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetWork.h; sourceTree = "<group>"; };
+		2D47C3E81FB45335009646A8 /* YDNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetWork.m; sourceTree = "<group>"; };
+		2D47C3E91FB45335009646A8 /* YDNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworking.h; sourceTree = "<group>"; };
+		2D47C3EA1FB45335009646A8 /* YDNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDNetworking.m; sourceTree = "<group>"; };
+		2D47C3EC1FB45335009646A8 /* TimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManager.h; sourceTree = "<group>"; };
+		2D47C3ED1FB45335009646A8 /* TimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManager.m; sourceTree = "<group>"; };
+		2D47C3EF1FB45335009646A8 /* HHServicePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHServicePickerView.h; sourceTree = "<group>"; };
+		2D47C3F01FB45335009646A8 /* HHServicePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHServicePickerView.m; sourceTree = "<group>"; };
+		2D47C3F81FB453A6009646A8 /* YDSelectPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDSelectPhoto.h; sourceTree = "<group>"; };
+		2D47C3F91FB453A6009646A8 /* YDSelectPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDSelectPhoto.m; sourceTree = "<group>"; };
+		2D47C3FB1FB453A6009646A8 /* DejActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejActivityView.h; sourceTree = "<group>"; };
+		2D47C3FC1FB453A6009646A8 /* DejActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejActivityView.m; sourceTree = "<group>"; };
+		2D47C3FD1FB453A6009646A8 /* DejFlickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DejFlickerView.h; sourceTree = "<group>"; };
+		2D47C3FE1FB453A6009646A8 /* DejFlickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DejFlickerView.m; sourceTree = "<group>"; };
+		2D47C4021FB458CB009646A8 /* MapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		2D47C4031FB458CB009646A8 /* MapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
 		2DD9F4AD1FB43FF8003A0ACE /* ssiwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ssiwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD9F4B01FB43FF8003A0ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DD9F4B11FB43FF8003A0ACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,6 +115,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D47C3E11FB45335009646A8 /* HHViewAnimated */ = {
+			isa = PBXGroup;
+			children = (
+				2D47C3E21FB45335009646A8 /* UIView+animated.h */,
+				2D47C3E31FB45335009646A8 /* UIView+animated.m */,
+			);
+			path = HHViewAnimated;
+			sourceTree = "<group>";
+		};
+		2D47C3E41FB45335009646A8 /* HHNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				2D47C3E51FB45335009646A8 /* DejNetwork.h */,
+				2D47C3E61FB45335009646A8 /* DejNetwork.m */,
+				2D47C3E71FB45335009646A8 /* YDNetWork.h */,
+				2D47C3E81FB45335009646A8 /* YDNetWork.m */,
+				2D47C3E91FB45335009646A8 /* YDNetworking.h */,
+				2D47C3EA1FB45335009646A8 /* YDNetworking.m */,
+			);
+			path = HHNetwork;
+			sourceTree = "<group>";
+		};
+		2D47C3EB1FB45335009646A8 /* TimerManager */ = {
+			isa = PBXGroup;
+			children = (
+				2D47C3EC1FB45335009646A8 /* TimerManager.h */,
+				2D47C3ED1FB45335009646A8 /* TimerManager.m */,
+			);
+			path = TimerManager;
+			sourceTree = "<group>";
+		};
+		2D47C3EE1FB45335009646A8 /* HHPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				2D47C3EF1FB45335009646A8 /* HHServicePickerView.h */,
+				2D47C3F01FB45335009646A8 /* HHServicePickerView.m */,
+			);
+			path = HHPickerView;
+			sourceTree = "<group>";
+		};
+		2D47C3F71FB453A6009646A8 /* YDSelectPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				2D47C3F81FB453A6009646A8 /* YDSelectPhoto.h */,
+				2D47C3F91FB453A6009646A8 /* YDSelectPhoto.m */,
+			);
+			path = YDSelectPhoto;
+			sourceTree = "<group>";
+		};
+		2D47C3FA1FB453A6009646A8 /* DejActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				2D47C3FB1FB453A6009646A8 /* DejActivityView.h */,
+				2D47C3FC1FB453A6009646A8 /* DejActivityView.m */,
+				2D47C3FD1FB453A6009646A8 /* DejFlickerView.h */,
+				2D47C3FE1FB453A6009646A8 /* DejFlickerView.m */,
+			);
+			path = DejActivityView;
+			sourceTree = "<group>";
+		};
 		2DD9F4A41FB43FF8003A0ACE = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +266,8 @@
 				2DD9F4D41FB441E6003A0ACE /* Common.h */,
 				2DD9F4D51FB44226003A0ACE /* Global.h */,
 				2DD9F4D61FB44226003A0ACE /* Global.m */,
+				2D47C4021FB458CB009646A8 /* MapManager.h */,
+				2D47C4031FB458CB009646A8 /* MapManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -197,6 +292,12 @@
 		2DD9F4E81FB44594003A0ACE /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2D47C3FA1FB453A6009646A8 /* DejActivityView */,
+				2D47C3F71FB453A6009646A8 /* YDSelectPhoto */,
+				2D47C3E41FB45335009646A8 /* HHNetwork */,
+				2D47C3EE1FB45335009646A8 /* HHPickerView */,
+				2D47C3E11FB45335009646A8 /* HHViewAnimated */,
+				2D47C3EB1FB45335009646A8 /* TimerManager */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -218,6 +319,8 @@
 				2DD9F5181FB447A5003A0ACE /* HHPersonController.m */,
 				2DD9F5111FB4473E003A0ACE /* HHMyInfoController.h */,
 				2DD9F5121FB4473E003A0ACE /* HHMyInfoController.m */,
+				2D47C3DE1FB44F17009646A8 /* HHMyTripController.h */,
+				2D47C3DF1FB44F17009646A8 /* HHMyTripController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -369,20 +472,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D47C4041FB458CB009646A8 /* MapManager.m in Sources */,
+				2D47C3F11FB45335009646A8 /* UIView+animated.m in Sources */,
 				2DD9F4D71FB44226003A0ACE /* Global.m in Sources */,
+				2D47C3FF1FB453A6009646A8 /* YDSelectPhoto.m in Sources */,
+				2D47C3F51FB45335009646A8 /* TimerManager.m in Sources */,
+				2D47C3F21FB45335009646A8 /* DejNetwork.m in Sources */,
 				2DD9F4B51FB43FF8003A0ACE /* ViewController.m in Sources */,
 				2DD9F4DC1FB4427D003A0ACE /* HHMainController.m in Sources */,
+				2D47C4001FB453A6009646A8 /* DejActivityView.m in Sources */,
 				2DD9F4E41FB442C1003A0ACE /* NSString+date.m in Sources */,
 				2DD9F4E61FB442C1003A0ACE /* NSString+Valid.m in Sources */,
+				2D47C3F61FB45335009646A8 /* HHServicePickerView.m in Sources */,
 				2DD9F5191FB447A5003A0ACE /* HHPersonController.m in Sources */,
 				2DD9F4E71FB442C1003A0ACE /* Foundation+Log.m in Sources */,
+				2D47C3F31FB45335009646A8 /* YDNetWork.m in Sources */,
 				2DD9F4D11FB440F4003A0ACE /* HHBaseController.m in Sources */,
+				2D47C4011FB453A6009646A8 /* DejFlickerView.m in Sources */,
+				2D47C3E01FB44F17009646A8 /* HHMyTripController.m in Sources */,
 				2DD9F4C01FB43FF8003A0ACE /* main.m in Sources */,
 				2DD9F5131FB4473E003A0ACE /* HHMyInfoController.m in Sources */,
 				2DD9F4E51FB442C1003A0ACE /* UIView+YDHandle.m in Sources */,
 				2D47C3DD1FB44B46009646A8 /* HHAMapHelper.m in Sources */,
 				2DD9F4B21FB43FF8003A0ACE /* AppDelegate.m in Sources */,
 				2DD9F4CE1FB440DB003A0ACE /* HHNavigationController.m in Sources */,
+				2D47C3F41FB45335009646A8 /* YDNetworking.m in Sources */,
 				2DD9F5161FB44750003A0ACE /* HHAnimateController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

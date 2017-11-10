@@ -10,4 +10,14 @@
 #define Const_h
 
 
+
+//这个写API
+#define AMapKey   @"1494a30a6ff3f7d77dc9273ec1736506"
+
+
+
+
+
+
+
 #endif /* Const_h */

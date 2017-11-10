@@ -10,4 +10,6 @@
 
 @interface HHMyInfoController : HHBaseController
 
+@property (nonatomic, weak) MAMapView *mapView;
+
 @end

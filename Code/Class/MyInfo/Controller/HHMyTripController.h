@@ -1,5 +1,5 @@
 //
-//  HHPersonController.h
+//  HHMyTripController.h
 //  ssiwo
 //
 //  Created by maoziyue on 2017/11/9.
@@ -8,9 +8,9 @@
 
 #import "HHBaseController.h"
 
-@interface HHPersonController : HHBaseController
+@interface HHMyTripController : HHBaseController
 
-@property (nonatomic, assign) CGRect rect;
+@property (nonatomic,copy)void (^dddddBlock)(NSString *str);
 
 
 @end

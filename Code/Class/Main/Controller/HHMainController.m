@@ -8,10 +8,21 @@
 
 #import "HHMainController.h"
 #import "HHAnimateController.h"
+#import "HHMyInfoController.h"
+#import "DejFlickerView.h"
+#import "DejActivityView.h"
+#import "MapManager.h"
+
+
+
 
 @interface HHMainController ()<UIGestureRecognizerDelegate>
 
 @property (nonatomic, assign) BOOL hasClick;//防止连点
+
+@property (nonatomic, weak  ) HHAnimateController *animateController;
+
+@property (nonatomic, strong) MAMapView *mapView;
 
 
 
@@ -34,11 +45,31 @@
     vc.view.backgroundColor = [UIColor clearColor];
     [self addChildViewController:vc];
     [self.view addSubview:vc.view];
+    self.animateController = vc;
+
 }
+
+- (void)rightClick
+{
+    HHMyInfoController *vc = [[HHMyInfoController alloc]init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    
+    MapManager *manager = [MapManager manager];
+    
+    manager.controller = self;
+    
+    [manager showMap];
+    
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -50,11 +81,10 @@
     [super viewDidLoad];
     
     [self setNavigationController];
+
+
+    
 }
-
-
-
-
 
 
 

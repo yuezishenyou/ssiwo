@@ -58,19 +58,19 @@
     [searchButton setImage:[UIImage imageNamed:@"search_down"] forState:UIControlStateHighlighted];
     searchButton.frame = CGRectMake(0, 0, 44, 44);
     [searchButton addTarget:self action:@selector(rightClick) forControlEvents:UIControlEventTouchUpInside];
-    
+
     UIButton *msgButton = [[UIButton alloc] init];
     [msgButton setImage:[UIImage imageNamed:@"notification"] forState:UIControlStateNormal];
     [msgButton setImage:[UIImage imageNamed:@"notification_down"] forState:UIControlStateHighlighted];
     msgButton.frame = CGRectMake(44, 0, 44, 44);
     [msgButton addTarget:self action:@selector(rightClick) forControlEvents:UIControlEventTouchUpInside];
-    
+
     UIView *rightView = [[UIView alloc] init];
     rightView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 88 - 5, FBStatusBarH, 88, 44);
     [rightView addSubview:searchButton];
     [rightView addSubview:msgButton];
     [navBarView addSubview:rightView];
-    
+
     searchButton.backgroundColor = [UIColor greenColor];
     msgButton.backgroundColor = [UIColor blueColor];
 }
