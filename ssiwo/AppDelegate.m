@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HHMainController.h"
 #import "HHNavigationController.h"
+#import "MapManager.h"
 
 @interface AppDelegate ()
 
@@ -24,7 +25,7 @@
     
     
     
-    [Global shareManager].lineStatus = LineStatusNomal;
+    [MapManager manager].lineStatus = LineStatusNomal;
     
     
     self.window.frame = [[UIScreen mainScreen]bounds];

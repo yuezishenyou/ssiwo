@@ -10,7 +10,7 @@
 
 @interface HHMyTripController : HHBaseController
 
-@property (nonatomic,copy)void (^dddddBlock)(NSString *str);
+@property (nonatomic,copy) void(^callback)(NSInteger lineStatus);
 
 
 @end

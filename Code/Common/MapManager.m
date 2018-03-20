@@ -11,7 +11,7 @@
 static NSString *userIdentifier = @"userIdentifier";
 static NSString *startIdentifier = @"startIdentifier";
 
-@interface MapManager ()<MAMapViewDelegate>
+@interface MapManager ()<MAMapViewDelegate,AMapSearchDelegate>
 
 @property (nonatomic, weak) UIView *supView;
 @property (nonatomic, weak) MAAnnotationView *userLocationAnnotationView;
@@ -55,14 +55,6 @@ static NSString *startIdentifier = @"startIdentifier";
     
 }
 
-//- (void)removeMap
-//{
-//    if (_mapView) {
-//        _mapView.delegate = nil;
-//        [_mapView removeFromSuperview];
-//        _mapView = nil;
-//    }
-//}
 
 - (void)removeMapView
 {
@@ -76,6 +68,8 @@ static NSString *startIdentifier = @"startIdentifier";
 - (void)locateMapViewInView:(UIView *)supView frame:(CGRect)frame
 {
     [self removeMapView];
+    
+    [self initSearch];
     
     _mapView = [[MAMapView alloc]initWithFrame:frame];
     _mapView.delegate = self;
@@ -95,6 +89,86 @@ static NSString *startIdentifier = @"startIdentifier";
 
 }
 
+- (void)initSearch
+{
+    if (self.search) {
+        self.search = nil;
+        self.search.delegate = nil;
+    }
+    self.search = [[AMapSearchAPI alloc]init];
+    self.search.delegate = self;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------
+//MARK- method
+//---------------------------------------------------------------------------
+
+- (void)setLineStatus:(LineStatus)lineStatus
+{
+    _lineStatus = lineStatus;
+    
+    switch (lineStatus) {
+        case LineStatusNomal:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+- (void)setRegeo:(CLLocationCoordinate2D)coor
+{
+    AMapReGeocodeSearchRequest *request = [[AMapReGeocodeSearchRequest alloc]init];
+    
+    request.location = [AMapGeoPoint locationWithLatitude:coor.latitude longitude:coor.longitude];
+    
+    request.requireExtension = YES;
+
+    [self.search AMapReGoecodeSearch:request];//
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -113,6 +187,33 @@ static NSString *startIdentifier = @"startIdentifier";
         annotationView.canShowCallout = NO;
         annotationView.image = [UIImage imageNamed:@"userLocation"];
         self.userLocationAnnotationView = annotationView;
+        return annotationView;
+    }
+    else if ([annotation isKindOfClass:[MAPointAnnotation class]])
+    {
+        static NSString *pointReuseIndetifier = @"pointReuseIndetifier";
+        MAPinAnnotationView *annotationView = (MAPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndetifier];
+        if (annotationView == nil)
+        {
+            annotationView = [[MAPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:pointReuseIndetifier];
+            annotationView.canShowCallout               = NO;
+            annotationView.animatesDrop                 = NO;
+            annotationView.draggable                    = NO;
+            //annotationView.rightCalloutAccessoryView    = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            //annotationView.pinColor                     = [self.annotations indexOfObject:annotation] % 3;
+        }
+        annotationView.image = [UIImage imageNamed:@"userPosition"];
+        NSString *title = annotation.title;
+        if (title && [title isEqualToString:@"开始"])
+        {
+            annotationView.image = [UIImage imageNamed:@"on"];
+        }
+        else if (title && [title isEqualToString:@"结束"])
+        {
+            annotationView.image = [UIImage imageNamed:@"off"];
+        }
+        
+        NSLog(@"--------abc-----------");
         return annotationView;
     }
     return nil;
@@ -149,6 +250,39 @@ static NSString *startIdentifier = @"startIdentifier";
 
 
 
+// 地图将要发生移动时调用此接口
+- (void)mapView:(MAMapView *)mapView mapWillMoveByUser:(BOOL)wasUserAction
+{
+    if (self.lineStatus == LineStatusNomal) {
+         NSLog(@"-----mapWillMoveByUser---------");
+        
+    }
+}
+
+// 地图移动结束后调用此接口
+- (void)mapView:(MAMapView *)mapView mapDidMoveByUser:(BOOL)wasUserAction
+{
+    if (self.lineStatus == LineStatusNomal) {
+        NSLog(@"-----mapDidMoveByUser---------");
+    }
+}
+
+// 地图区域即将改变时会调用此接口
+- (void)mapView:(MAMapView *)mapView regionWillChangeAnimated:(BOOL)animated
+{
+    
+}
+
+// 地图区域改变完成后会调用此接口
+- (void)mapView:(MAMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+{
+    NSLog(@"regionDidChangeAnimated");
+    
+    CLLocationCoordinate2D centerCoordinate = mapView.region.center;
+    
+    [self setRegeo:centerCoordinate];
+
+}
 
 
 
@@ -160,10 +294,23 @@ static NSString *startIdentifier = @"startIdentifier";
 
 
 
+#pragma mark --------------------------- search Delegate -------------------------------------
 
+- (void)AMapSearchRequest:(id)request didFailWithError:(NSError *)error
+{
+    NSLog(@"-------didFailWithError----------");
+}
 
-
-
+/* 逆地理编码回调. */
+- (void)onReGeocodeSearchDone:(AMapReGeocodeSearchRequest *)request response:(AMapReGeocodeSearchResponse *)response
+{
+    if (response.regeocode == nil) {
+        return;
+    }
+    
+    NSLog(@"-------(%@)----------",response.regeocode.formattedAddress);
+    
+}
 
 
 

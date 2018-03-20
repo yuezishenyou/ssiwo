@@ -45,6 +45,87 @@
 
 
 
+//---------------------------------------------------------------------------
+//MARK- method
+//---------------------------------------------------------------------------
+//- (void)setLineStatus:(LineStatus)lineStatus
+//{
+//    _lineStatus = lineStatus;
+//    
+//    switch (lineStatus) {
+//        case LineStatusNomal:
+//            {
+//                
+//            }
+//            break;
+//        case LineStatusPlan:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusCall:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusCancelCall:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusOrderMarked:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusOrderCancel:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusStartJourney:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusInJourney:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusEndJourney:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusPayBill:
+//        {
+//            
+//        }
+//            break;
+//        case LineStatusEvaluate:
+//        {
+//            
+//        }
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//    
+//}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

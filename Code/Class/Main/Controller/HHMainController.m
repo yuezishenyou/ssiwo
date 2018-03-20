@@ -58,6 +58,11 @@
 }
 
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 
 
 - (void)viewDidLoad {
@@ -79,7 +84,7 @@
     [manager locateMapViewInView:self.view frame:CGRectMake(0, 0, kScreenW, kScreenH)];
     
     
-    NSInteger lineStatus = [Global shareManager].lineStatus;
+    NSInteger lineStatus = [MapManager manager].lineStatus;
     
     switch (lineStatus) {
         case LineStatusNomal:
@@ -88,42 +93,18 @@
                 manager.mapView.userTrackingMode = MAUserTrackingModeFollow;
             }
             break;
-        case LineStatusPlan:
-        {
-            
-        }
-            break;
-        case LineStatusCall:
-        {
-            
-        }
-            break;
-        case LineStatusCancelCall:
-        {
-            
-        }
-            break;
-        case LineStatusOrderMarked:
-        {
-            
-        }
-            break;
-        case LineStatusOrderCancel:
-        {
-            
-        }
-            break;
-            
+    
         default:
             break;
     }
 
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
+
+
+
+
+
 
 
 
