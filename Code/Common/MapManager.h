@@ -16,19 +16,11 @@
 
 @property (nonatomic, strong) AMapNaviDriveManager *driveManager;
 
-@property (nonatomic, weak) UIViewController *controller;
-
 + (instancetype)manager;
 
-- (void)locateMapViewInView:(UIView *)mapSuerView
-                      frame:(CGRect)frame;
+- (void)locateMapViewInView:(UIView *)supView frame:(CGRect)frame;
 
-- (void)locateMapWithController:(UIViewController *)vc frame:(CGRect)frame;
-
-- (void)showMap;
-
-- (void)removeMap;
-
+- (void)removeMapView;
 
 
 @end

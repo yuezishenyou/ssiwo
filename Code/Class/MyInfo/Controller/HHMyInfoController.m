@@ -24,9 +24,7 @@
     
     MapManager *manager = [MapManager manager];
     
-    manager.controller = nil;
-    
-    [manager removeMap];
+    [manager removeMapView];
     
 }
 
@@ -43,9 +41,7 @@
 {
     MapManager *manager = [MapManager manager];
     
-    manager.controller = self;
-    
-    [manager showMap];
+  
 }
 
 

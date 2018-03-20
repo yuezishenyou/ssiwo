@@ -23,6 +23,10 @@
     [AMapServices sharedServices].enableHTTPS = YES;
     
     
+    
+    [Global shareManager].lineStatus = LineStatusNomal;
+    
+    
     self.window.frame = [[UIScreen mainScreen]bounds];
     
     self.window.backgroundColor = [UIColor whiteColor];
